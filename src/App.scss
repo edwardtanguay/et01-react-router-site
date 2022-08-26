@@ -3,6 +3,18 @@ body {
   color: #ccc;
   font-family: sans-serif;
 
+  a {
+    color: rgb(106, 195, 133);
+  }
+
+  .info {
+    background-color: rgb(153, 206, 151) !important;
+    color: black;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+
   nav {
     background-color: #666;
     padding: .1rem;
