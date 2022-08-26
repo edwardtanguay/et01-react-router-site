@@ -1,4 +1,4 @@
 - x create pages
-- .. show all pages on App.jsx
-- nav with 3 pages: Welcome, Employees, Tech Books
+- x show all pages on App.jsx
+- .. nav with 3 pages: Welcome, Employees, Tech Books
 - with react router make it dynamic
