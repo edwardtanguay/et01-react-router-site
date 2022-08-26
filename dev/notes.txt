@@ -2,3 +2,8 @@
 - x show all pages on App.jsx
 - x nav with 3 pages: Welcome, Employees, Tech Books
 - x with react router make it dynamic
+
+- show all employees
+- enable user to click on employee and show that employee, in URL will be e.g. 
+	- localhost/employees/5 shows employee 5
+	- localhost/employees shows all employees
