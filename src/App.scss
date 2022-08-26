@@ -15,6 +15,48 @@ body {
     border-radius: 5px;
   }
 
+  .pageArea {
+    padding: 1rem;
+  }
+
+  .techBook {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+
+    img {
+      width: 200px;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      color: rgb(218, 218, 159);
+    }
+    .description {
+      font-size: 1.3rem;
+      color: #ccc;
+    }
+    animation: fadein 1s ease-in;
+  }
+
+  .techBookNav {
+    a {
+      color: rgb(233, 233, 167);
+      text-decoration: none;
+    }
+
+    a.active {
+      color: rgb(0, 0, 0);
+      background-color: rgb(225, 221, 101);
+      display: inline-block;
+      padding: 0 .5rem;
+      font-weight: bold;
+    }
+  }
+
   nav {
     background-color: #666;
     padding: .1rem;
@@ -58,4 +100,14 @@ body {
       font-style: italic;
     }
   }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+ 
+    to {
+        opacity: 1;
+    }
 }
