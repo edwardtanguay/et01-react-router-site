@@ -14,13 +14,13 @@ export const PageEmployees = ({ employees }) => {
 			</p>
 			<p>There are the {employees.length} employees:</p>
 			{id ? (
-				<Employee emp={emp} />
+				<Employee emp={emp} fullInfo={true} />
 			) : (
 				<div>
 					<Outlet />
 					<div className="employees">
 						{employees.map((emp, i) => {
-							return <Employee key={i} emp={emp} />;
+							return <Employee key={i} emp={emp} fullInfo={false} />;
 						})}
 					</div>
 				</div>
