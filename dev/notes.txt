@@ -5,5 +5,6 @@
 
 - show all employees
 - enable user to click on employee and show that employee, in URL will be e.g. 
+	- employee nav with links
 	- localhost/employees/5 shows employee 5
 	- localhost/employees shows all employees
