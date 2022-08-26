@@ -6,6 +6,7 @@ import { PageTechBooks } from './pages/PageTechBooks';
 import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import axios from 'axios';
+import { Employee } from './components/Employee';
 
 const employeesUrl = 'https://edwardtanguay.netlify.app/share/employees.json';
 const techBooksUrl = 'https://edwardtanguay.netlify.app/share/techBooks.json';
@@ -20,11 +21,11 @@ function App() {
 		})();
 	}, []);
 
-	useEffect(() => {
-		(async () => {
-			setTechBooks((await axios.get(techBooksUrl)).data);
-		})();
-	}, []);
+	// useEffect(() => {
+	// 	(async () => {
+	// 		setTechBooks((await axios.get(techBooksUrl)).data);
+	// 	})();
+	// }, []);
 
 	return (
 		<div className="App">
@@ -33,8 +34,18 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<PageWelcome />} />
-				<Route path="/employees" element={<PageEmployees employees={employees} />} />
-				<Route path="/techbooks" element={<PageTechBooks techBooks={techBooks} />} />
+				{employees.length > 0 && (
+					<Route
+						path="/employees"
+						element={<PageEmployees employees={employees} />}
+					>
+						<Route path=":id" element={<Employee />} />
+					</Route>
+				)}
+				<Route
+					path="/techbooks"
+					element={<PageTechBooks techBooks={techBooks} />}
+				/>
 			</Routes>
 		</div>
 	);

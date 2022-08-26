@@ -10,13 +10,14 @@ body {
     ul {
       display: flex;
       list-style: none;
-      padding: 0 0 0 1rem; 
+      padding: 0 0 0 1rem;
       gap: 1rem;
 
       a {
         color: #bbb;
         text-decoration: none;
       }
+
       a.active {
         color: rgb(210, 210, 44);
       }
@@ -30,11 +31,17 @@ body {
 
     div.fullName {
       font-size: 1.5rem;
-      color: rgb(215, 215, 165);
+
+      a {
+        color: rgb(215, 215, 165);
+        text-decoration: none;
+      }
     }
+
     div.title {
       color: orange;
     }
+
     div.notes {
       font-style: italic;
     }
