@@ -1,7 +1,7 @@
-export const PageTechBooks = () => {
+export const PageTechBooks = ({techBooks}) => {
 	return (
 		<>
-			<p>There are the following tech books:</p>
+			<p>There are {techBooks.length} tech books:</p>
 		</>
 	);
 };

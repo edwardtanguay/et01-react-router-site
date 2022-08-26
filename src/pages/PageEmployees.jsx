@@ -1,7 +1,7 @@
-export const PageEmployees = () => {
+export const PageEmployees = ({employees}) => {
 	return (
 		<>
-			<p>There are the following employees:</p>
+			<p>There are the {employees.length} employees:</p>
 		</>
 	);
 };
