@@ -5,15 +5,17 @@ import { PageTechBooks } from './pages/PageTechBooks';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-    return (
-        <div className="App">
-            <h1>React Router Site</h1>
+	return (
+		<div className="App">
+			<h1>React Router Site</h1>
 
-            <PageWelcome />
-            <PageEmployees/>
-            <PageTechBooks/>
-        </div>
-    );
+			<Routes>
+				<Route path="/" element={<PageWelcome />}/>
+				<Route path="/employees" element={<PageEmployees />}/>
+				<Route path="/techbooks" element={<PageTechBooks />}/>
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
